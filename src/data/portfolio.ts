@@ -165,7 +165,7 @@ export interface SiteCopy {
 
 const personal: PersonalInfo = {
   name: "Syed Salman Ali Zaidi",
-  title: "Backend Engineer · Builder",
+  title: "Backend Engineer · .NET & Go",
   tagline: "Building scalable systems.",
   location: "Karachi, Pakistan",
   email: "syedsalman1823@gmail.com",
@@ -346,7 +346,6 @@ const certifications: readonly Certification[] = [
   { name: "Oracle Cloud", icon: "cloud" },
   { name: "GCP Generative AI Leader", icon: "spark" },
   { name: "Six Sigma", icon: "badge" },
-  { name: "AWS [SPECIFIC CERT NAME]", icon: "aws" },
 ];
 
 const currentRole = experience[0];
@@ -445,7 +444,7 @@ const site: SiteCopy = {
   formOpened: "Opened a draft in your mail client.",
   formNeedsEmail:
     "The profile email is still a placeholder, so this form cannot open a draft yet.",
-  footerBlurb: "Backend Engineer · Builder",
+  footerBlurb: "Backend Engineer · .NET & Go",
   footerBuilt: "Built with Next.js & Tailwind",
   footerRights: "All rights reserved.",
 };

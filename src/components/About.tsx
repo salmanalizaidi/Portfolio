@@ -25,7 +25,7 @@ export function About() {
             <h2 className="mt-space-md font-display text-headline-lg-mobile text-on-surface md:text-headline-lg">
               {site.aboutTitle}
             </h2>
-            <div className="mt-space-md flex flex-1 flex-col justify-between gap-space-lg font-sans text-body-md text-on-surface-variant">
+            <div className="mt-space-md flex flex-1 flex-col justify-between gap-space-md font-sans text-body-md leading-relaxed text-on-surface-variant">
               {site.aboutParagraphs.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
@@ -67,7 +67,7 @@ export function About() {
               </pre>
             </div>
 
-            <div className="grid grid-cols-1 gap-space-lg rounded border border-hairline bg-surface-container p-space-md sm:grid-cols-2">
+            <div className="flex flex-col gap-space-md rounded border border-hairline bg-surface-container p-space-md sm:flex-row sm:items-start sm:justify-between">
               <div className="flex min-w-0 flex-col gap-space-xs">
                 <span className="font-mono text-label-sm uppercase text-outline">
                   {site.baseLabel}
@@ -76,7 +76,7 @@ export function About() {
                   {personal.location}
                 </span>
               </div>
-              <div className="flex min-w-0 flex-col gap-space-xs sm:border-l sm:border-hairline sm:pl-space-md">
+              <div className="flex min-w-0 flex-col gap-space-xs sm:items-end sm:text-right">
                 <span className="font-mono text-label-sm uppercase text-outline">
                   {site.educationLabel}
                 </span>

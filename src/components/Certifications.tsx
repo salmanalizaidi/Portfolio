@@ -22,7 +22,7 @@ export function Certifications() {
             {site.certsIntro}
           </p>
         </header>
-        <div className="grid grid-cols-1 gap-gutter md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-gutter md:grid-cols-2">
           {certifications.map((item) => (
             <article
               key={item.name}
@@ -34,7 +34,7 @@ export function Certifications() {
               <h3 className="font-display text-headline-sm text-on-surface">{item.name}</h3>
             </article>
           ))}
-          <article className="flex items-center gap-space-md rounded border border-hairline bg-surface-container-low p-space-md lg:col-span-2">
+          <article className="flex items-center gap-space-md rounded border border-hairline bg-surface-container-low p-space-md">
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded bg-surface-container text-on-surface">
               <Icon name="school" className="h-6 w-6" />
             </div>
