@@ -143,12 +143,27 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    scrollbar-width: none;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-outline-variant) var(--color-background);
   }
 
-  html::-webkit-scrollbar,
-  body::-webkit-scrollbar {
-    display: none;
+  html::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  html::-webkit-scrollbar-track {
+    background: var(--color-background);
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background: var(--color-outline-variant);
+    border: 2px solid var(--color-background);
+    border-radius: 999px;
+  }
+
+  html::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary-fixed-dim);
   }
 
   body {
